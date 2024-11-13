@@ -4,8 +4,11 @@ jobs:
   echo_hello_world:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello, world!"
-      - run: ls
-      - run: curl https://www.google.com
-      
+      - name: "echo"
+        run: echo "Hello, world!"
+      - name: "ls"
+        run: ls
+      - name: "curl"  
+        run: curl https://www.google.com
+
 
