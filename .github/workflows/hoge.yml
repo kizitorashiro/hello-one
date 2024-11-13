@@ -1,4 +1,4 @@
-name: Github Actions Demo
+name: Github Actions Demo on push
 on: [push]
 jobs:
   echo_hello_world:
