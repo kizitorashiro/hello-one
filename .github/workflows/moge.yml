@@ -1,0 +1,9 @@
+name: Github Actions Demo 2
+on: [push]
+jobs:
+  echo_status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "echo status"
+        run: echo "Fine"
+
