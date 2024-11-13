@@ -1,13 +1,15 @@
 name: Github Actions Demo for Unit Test
 on: [pull_request, workflow_dispatch]
 jobs:
-  echo_status:
+  unittest:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: ls
         run: ls -al
+      - name:  CheckNodejs
+        run: node --version
 
 
 
