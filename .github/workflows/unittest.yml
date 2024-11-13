@@ -16,6 +16,8 @@ jobs:
           node-version: '20'
       - name:  CheckCurrentNodejs
         run: node --version
+      - name: InstallDependecies
+        run: npm install
       
 
 
