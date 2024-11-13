@@ -5,5 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello, world!"
-
+      - run: ls
+      - run: curl https://www.google.com
       
+
