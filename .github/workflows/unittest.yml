@@ -1,5 +1,8 @@
-name: Github Actions Demo for Unit Test
-on: [pull_request, workflow_dispatch]
+name: Github Actions Demo for UnitTest
+on: 
+  pull_request:
+    branches:
+      - main
 jobs:
   unittest:
     runs-on: ubuntu-latest
@@ -19,8 +22,10 @@ jobs:
       - name: InstallDependecies
         run: npm install
       - name: RunUnittest
-        run: npm test
-        
+        uses: ArtiomTr/jest-coverage-report-action@v2
+        with:
+          test-script: npm test
+
       
 
 
