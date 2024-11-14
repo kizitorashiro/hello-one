@@ -1,5 +1,5 @@
 name: Github Actions Demo on pr
-on: [pull_request, workflow_dispatch]
+on: []
 jobs:
   echo_status:
     runs-on: ubuntu-latest
