@@ -1,7 +1,8 @@
 name: Github Actions Demo for Unit Test
-on: pull_request:
-  branches:
-    - main
+on: 
+  pull_request:
+    branches:
+      - main
 jobs:
   unittest:
     runs-on: ubuntu-latest
