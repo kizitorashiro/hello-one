@@ -18,6 +18,9 @@ jobs:
         run: node --version
       - name: InstallDependecies
         run: npm install
+      - name: RunUnittest
+        run: npm test
+        
       
 
 
