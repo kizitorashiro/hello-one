@@ -1,4 +1,4 @@
-name: Github Actions Demo for Unit Test
+name: Github Actions Demo for UnitTest
 on: 
   pull_request:
     branches:
