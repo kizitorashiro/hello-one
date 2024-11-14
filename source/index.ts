@@ -1,10 +1,10 @@
 import express from 'express';
-import { echoHello } from './echo';
+import { EchoMessages } from './echo'; // 修正箇所
 const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
-    res.send(echoHello('John'));
+    res.send(EchoMessages.hello('John')); // 修正箇所
 });
 
 app.listen(port, () => {
